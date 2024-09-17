@@ -49,7 +49,7 @@
               class="float-right my-3 my-md-0"
               aria-label="Seleccionar variable"
               aria-placeholder="Variable"
-              onchange="this.options[this.selectedIndex].value && (window.location = '/rema/' + this.options[this.selectedIndex].value);"
+              onchange="this.options[this.selectedIndex].value && (window.location = '/map/' + this.options[this.selectedIndex].value);"
             >
               {% for measure in measurements %}
               <option value="{{measure.name}}"
