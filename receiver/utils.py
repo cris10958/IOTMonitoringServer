@@ -102,7 +102,7 @@ def get_or_create_measurement(name, unit):
     Intenta traer la variable con nombre y unidad {name, unit}. Si no existe la crea y la retorna.
     '''
     measurement, created = Measurement.objects.get_or_create(
-        name=name)
+        name=name, unit=unit)
     return measurement
 
 
